@@ -1,19 +1,15 @@
 class AppCtrl {
 }
 
-const createAppCtrl = () => {
- 	return () => {
-    return {
-      url: '/app',
-      scope: {},
-      access: {restricted: true},
-      controllerAs: 'appCtrl',
-      controller: AppCtrl,
-      bindToController: true,
-      template: require('./App.html'),
-    };
+let app = () => {
+  return {
+    url: '/app',
+    controllerAs: 'appCtrl',
+    controller: AppCtrl,
+    bindToController: true,
+    template: require('./App.html'),
   };
 };
 
 
-export default createAppCtrl;
+export default app;

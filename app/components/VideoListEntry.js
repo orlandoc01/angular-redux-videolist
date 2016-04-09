@@ -1,19 +1,18 @@
 class VideoListEntryCtrl {
 }
 
-const createVideoListEntryCtrl = () => {
-  return () => {
-    return {
-      restrict: 'E',
-      scope: {},
-      replace: true,
-      controllerAs: 'videoListCtrl',
-      controller: VideoListCtrl,
-      bindToController: true,
-      template: require('./VideoListEntry.html'),
-    };
+const videoListEntry = () => {
+  return {
+    restrict: 'E',
+    scope: {
+    	video: '='
+    },
+    replace: true,
+    controllerAs: 'videoListCtrl',
+    controller: VideoListEntryCtrl,
+    bindToController: true,
+    template: require('./VideoListEntry.html'),
   };
 };
 
-
-export default createVideoListEntryCtrl
+export default videoListEntry;
