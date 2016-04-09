@@ -13,7 +13,7 @@ class VideoListCtrl {
     return {
       itemClick: (vid) => {
         setVideoList(vid);
-      };
+      }
     };
   }
 }
