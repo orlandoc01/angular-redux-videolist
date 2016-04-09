@@ -1,4 +1,12 @@
 class VideoPlayerCtrl {
+  constructor($ngRedux) {
+    $ngRedux.connect(this.mapStateToThis)(this);
+  }
+  mapStateToThis(state) {
+    return {
+      nowPlaying: state.nowPlaying
+    };
+  }
 }
 
 const createVideoPlayerCtrl = () => {

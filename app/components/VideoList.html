@@ -1,6 +1,6 @@
 <div className="video-list media">
   <div ng-show="Object.keys(videoListCtrl.videoList).length > 0">
- 		<video-list-entry ng-repeat='vid in videoListCtrl.videoList track by vid.etag' video="vid" onClick="videoListCtrl.itemClick.bind(this,vid)"/>:
+ 		<video-list-entry ng-repeat='vid in videoListCtrl.videoList track by vid.etag' video="vid" ng-click="videoListCtrl.itemClick.bind(this,vid)"/>:
   </div>
   <div ng-show="Object.keys(videoListCtrl.videoList).length === 0">
   	Please enter a search query
