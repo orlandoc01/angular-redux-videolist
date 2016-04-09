@@ -10,7 +10,7 @@ const createVideoListEntryCtrl = () => {
       controllerAs: 'videoListCtrl',
       controller: VideoListCtrl,
       bindToController: true,
-      template: require('./VideoEntryList.html'),
+      template: require('./VideoListEntry.html'),
     };
   };
 };

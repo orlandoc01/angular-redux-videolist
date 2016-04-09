@@ -10,7 +10,7 @@ const createVideoPlayerCtrl = () => {
       controllerAs: 'videoPlayerCtrl',
       controller: VideoPlayerCtrl,
       bindToController: true,
-      template: require('./videoPlayerCtrl.html'),
+      template: require('./VideoPlayer.html'),
     };
   };
 };

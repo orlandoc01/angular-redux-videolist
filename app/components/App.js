@@ -4,9 +4,9 @@ class AppCtrl {
 const createAppCtrl = () => {
  	return () => {
     return {
-      restrict: 'E',
+      url: '/app',
       scope: {},
-      replace: true,
+      access: {restricted: true},
       controllerAs: 'appCtrl',
       controller: AppCtrl,
       bindToController: true,
