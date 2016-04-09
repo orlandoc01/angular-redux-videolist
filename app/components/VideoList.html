@@ -1,8 +1,8 @@
 <div class="video-list media">
-  <div ng-show="Object.keys(videoListCtrl.videoList).length > 0">
+  <div ng-show="{{Object.keys(videoListCtrl.videoList).length > 0 }}">
  		<video-list-entry ng-repeat='video in videoListCtrl.videoList track by video.etag' video="video" ng-click="videoListCtrl.itemClick.bind(this,video)"></video-list-entry>
   </div>
-  <div ng-show="Object.keys(videoListCtrl.videoList).length === 0">
+  <div ng-show="{{Object.keys(videoListCtrl.videoList).length <= 0}}">
   	Please enter a search query
   </div>
 </div>
