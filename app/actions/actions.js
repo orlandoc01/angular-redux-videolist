@@ -1,13 +1,13 @@
 export const setPlayingVideo = (video) => {
 	return {
-		actionType: 'SET_PLAYING',
+		type: 'SET_PLAYING',
 		video
 	};
 };
 
 export const setVideoList = (videoList) => {
 	return {
-		actionType: 'SET_LIST',
+		type: 'SET_LIST',
 		videoList
 	};
 };

@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 
 const modifyPlayingVideo = (state = {}, action) => {
-	switch(action.actionType) {
+	switch(action.type) {
 		case 'SET_PLAYING':
 			return action.video;
 		default:
@@ -10,7 +10,7 @@ const modifyPlayingVideo = (state = {}, action) => {
 };
 
 const modifyVideoList = (state = [], action) => {
-	switch(action.actionType) {
+	switch(action.type) {
 		case 'SET_LIST':
 			return action.videoList;
 		default:
