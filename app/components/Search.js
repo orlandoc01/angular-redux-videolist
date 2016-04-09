@@ -37,4 +37,4 @@ const createSearchCtrl = () => {
 };
 
 
-export default createNavCtrl;
+export default createSearchCtrl;
