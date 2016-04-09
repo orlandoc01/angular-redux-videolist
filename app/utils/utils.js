@@ -1,4 +1,4 @@
-const YOUTUBE_API_KEY = '';
+const YOUTUBE_API_KEY = 'INSERT_YOUTUBE_API_KEY';
 
 
 let searchYoutube = (options, callback) => {
