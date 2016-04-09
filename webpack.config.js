@@ -12,10 +12,6 @@ let config = {
   devtool: 'eval',
 
   entry: [
-    //hot style updates
-    'webpack/hot/dev-server',
-    //script refreshes browser only on hot updates
-    'webpack-dev-server/client?http://localhost:8080',
     mainPath
   ],
 
@@ -41,9 +37,8 @@ let config = {
         test: /\.html$/,
         loader: 'raw'
       }]
-  },
+  }
 
-  plugins: [new Webpack.HotModuleReplacementPlugin()]
 };
 
 module.exports = config;
