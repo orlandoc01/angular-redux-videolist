@@ -8,7 +8,7 @@ const videoListEntry = () => {
     	video: '='
     },
     replace: true,
-    controllerAs: 'videoListCtrl',
+    controllerAs: 'videoListEntryCtrl',
     controller: VideoListEntryCtrl,
     bindToController: true,
     template: require('./VideoListEntry.html'),

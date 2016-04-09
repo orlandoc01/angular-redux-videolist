@@ -1,4 +1,4 @@
-import {setVideoList} from '../actions/actions.js';
+import {setPlayingVideo} from '../actions/actions.js';
 
 class VideoListCtrl {
   constructor($ngRedux) {
@@ -12,7 +12,7 @@ class VideoListCtrl {
   mapDispatchToThis(dispatch) {
     return {
       itemClick: (vid) => {
-        setVideoList(vid);
+        dispatch(setPlayingVideo(vid));
       }
     };
   }
