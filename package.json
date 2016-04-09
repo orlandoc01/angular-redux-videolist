@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
     "express": "^4.13.4",
     "http-proxy": "^1.13.2",
     "morgan": "^1.7.0",

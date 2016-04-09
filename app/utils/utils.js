@@ -1,4 +1,4 @@
-const YOUTUBE_API_KEY = 'AIzaSyDvEaPTlv9zYqaGE9u-Tw5dq_YyDRKG3Uwloc';
+const YOUTUBE_API_KEY = '';
 
 
 let searchYoutube = (options, callback) => {

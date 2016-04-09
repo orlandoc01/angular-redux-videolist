@@ -12,14 +12,12 @@ module.exports = () => {
   let compiler = Webpack(webpackConfig);
 
   //Log in terminal when bundle starts with time
-
   compiler.plugin('compile', () => {
     console.log('Bundling..');
     bundleStart = Date.now();
   });
 
   //Log when build complete
-
   compiler.plugin('done', () => {
     console.log(`Bundled in ${Date.now()-bundleStart} ms!`);
   });
@@ -28,10 +26,8 @@ module.exports = () => {
     //Tell webpack where to serve bundled application
     //When proxying: localhost:3000/build -> localhost:8080/build
     publicPath: '/build/',
-
     //hot replacement
     hot: true;
-
     //terminal configs
     quiet: false,
     noInfo: true,
