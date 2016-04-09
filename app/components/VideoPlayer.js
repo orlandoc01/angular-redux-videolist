@@ -1,8 +1,15 @@
 class VideoPlayerCtrl {
-  constructor($ngRedux) {
-    $ngRedux.connect(this.mapStateToThis)(this);
+  constructor($ngRedux, $sce) {
+    window.player = this;
+    $ngRedux.connect((state) => {
+      let src = state.nowPlaying.id ? $sce.trustAsResourceUrl('https://www.youtube.com/embed/' +
+        state.nowPlaying.id.videoId) : '';
+
+      return {nowPlaying: state.nowPlaying, src};
+    })(this);
   }
   mapStateToThis(state) {
+
     return {
       nowPlaying: state.nowPlaying
     };
